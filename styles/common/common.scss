@@ -1,0 +1,496 @@
+
+// variables
+// mixins
+
+@font-face {
+    font-family: 'Smooch Sans';
+    src: url("../../assets/static/SmoochSans-Regular.woff2") format("woff2") format('woff2');
+         url("../../assets/static/SmoochSans-Regular.woff") format("woff") format('woff');
+         url("../../assets/static/SmoochSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+/* === Hero Section (Common) === */
+.hero-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+
+    .hero-text {
+        font-size: 3rem;
+        font-weight: bold;
+        color: black;
+        margin: 0;
+        letter-spacing: 2px;
+        transition: font-size 0.3s ease;
+    }
+}
+
+/* === Icons Section (Common) === */
+.icons-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+
+    .icon {
+        text-align: center;
+        width: 200px;
+        padding: 10px;
+        background-color: white;
+        box-shadow: none;
+        transition: transform 0.3s ease;
+
+        .icon-label {
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: white;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px 0;
+            background-color: white;
+            color: #333;
+        }
+
+        p:last-child {
+            font-size: 0.9rem;
+            color: #777;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+    }
+}
+
+/* === Full Width Image Section (Common) === */
+.full-width-image-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("../../assets/get_in_touch.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    p {
+        position: absolute;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/* === Centered Text (Common) === */
+.centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Smooch Sans;
+    margin: 20px 0;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .link-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #36454F;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: normal;
+        color: gray;
+    }
+}
+
+/* === Worth Link (Common) === */
+.worth-link {
+    color: rgb(190, 7, 190);
+}
+
+/* === Elements Link (Common) === */
+.elements-link {
+    color: rgb(39, 196, 180);
+}
+
+/* === More Tags Link (Common) === */
+.more-tags-link {
+    color: #f70757;
+}
+
+/* === Final Image Section (Common) === */
+.final-image-section {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    overflow: hidden; 
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        z-index: -1; 
+    }
+
+    .text-overtop {
+        position: relative;
+        z-index: 1; 
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        color: white;
+        text-align: left; 
+        font-family: smooch sans;
+        font-weight: bold;
+        font-size: larger;
+        max-width: 80%; 
+
+        p {
+            font-size: 0.8em !important;
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        span {
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
+
+        i {
+            font-size: 2em;
+            margin-right: 10px;
+            color: white;
+            display: inline-block;
+            vertical-align: middle; 
+        }
+
+        .find-us, .give-us {
+            color: white;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 10px;
+        }
+
+        .contact-item span {
+            margin-left: 10px;
+        }
+    }
+}
+
+/* Elements Page Styles */
+body.elements-page form button[type="reset"] {
+    background-color: #f9f9f9; 
+    color: #333; 
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Smooch Sans', sans-serif !important;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(247, 7, 87, 0.4);
+}
+
+body.elements-page form button[type="submit"] {
+    background-color: #f70757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Smooch Sans', sans-serif !important;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-to-top {
+   color: #f70757;
+   text-decoration: none;
+}
+
+.social-links a {
+    color: #f70757;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Horizontal scrolling box styling */
+.scroll-box {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    word-wrap: break-word;  
+    white-space: normal;    
+}
+
+
+
+/* Different colors for each box link */
+.box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.box .box-link-1 {
+    color: purple !important;
+}
+
+.box .box-link-2 {
+    color: lightblue !important;
+}
+
+.box .box-link-3 {
+    color: #f70757 !important;
+}
+
+/* Ensure h1 and p tags inside .layer-beneath are specifically targeted */
+.layer-beneath h1 {
+    color: black;
+}
+
+.layer-beneath p {
+    color: gray;
+}
+
+/* Ensuring text color for all paragraphs inside .box */
+.box p {
+    color: gray;
+}
+
+/* Retain the background styling for .layer-beneath and other related elements */
+.layer-beneath {
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.layer-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.boxes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+    gap: 20px;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box p {
+    color: gray;
+}
+
+
+
+
+
+/* Contact Page */
+.contact-page {
+    font-family: 'Smooch Sans', sans-serif;
+    padding-left: 20px;
+
+    .hero-section {
+       padding: 20px;
+       text-align: left;
+   }
+
+   .hero-section h1 {
+       text-align: left;
+       margin-bottom: 30px;
+   }
+}
+
+.contact-page .button-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-page .button-container button {
+    background-color: #f70757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page .contact-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-page .contact-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-page .contact-details p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-page .contact-details i {
+    margin-right: 10px;
+    color: #f70757;
+
+    .contact-details i {
+        color: #f70757;
+    }
+}
+
+/* Blog Page */
+.blog-page header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to left, #ff66b2, #ff007f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+
+    h1 {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .overtop-image {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        width: 750px;
+        height: 480px;
+        background: url("../../assets/stat_lib.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .header-content {
+        z-index: 2;
+        color: white;
+        font-family: Smooch Sans;
+        font-size: larger;
+    }
+}
+
+.about-page > div {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* For Section Headings */
+.about-page section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* For List Items */
+.about-page section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-page section ul li {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Remove default link color (blue) and set text color to inherit */
+.about-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .icons-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 2rem;
+    }
+}

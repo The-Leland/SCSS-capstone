@@ -1,0 +1,334 @@
+@font-face {
+    font-family: Smooch Sans;
+    src:url("../../assets/static/SmoochSans-Thin.ttf");
+    src:url("../../assets/static/SmoochSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  
+/* Navbar Styling */
+nav {
+    background-color: white;
+    font-family: Smooch Sans;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navbar-left .hestia {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    li {
+        a {
+            color: #f70757;
+            text-decoration: none;
+
+            &:hover {
+                color: #ff007f;
+            }
+        }
+
+        .more-button {
+            background-color: #f70757;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #ff007f;
+            }
+        }
+    }
+}
+
+
+
+  
+
+ header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("../../assets/clouds.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .overtop-image {
+       position: absolute;
+       left: 10%;
+       bottom: 0;
+       transform: translate(-50% -50%);
+       width: 750px;
+       height: 480px;
+       background: url("../../assets/stat_lib.png");
+       background-repeat: no-repeat;
+       background-size: cover;
+       z-index: 1;
+    }
+    .header-content {
+       z-index: 2;
+       text-align: center;
+       color: white;
+       font-family: Smooch Sans;
+       font-size: larger;
+
+       .button {
+          background-color: #f70757;
+          color: white;
+          border: none;
+          padding: 15px 30px;
+          font-size: 13px;
+          cursor: pointer;
+      }
+    }
+ } 
+
+
+/* Blog page */
+.blog-page header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to left, #ff66b2, #ff007f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+
+    h1 {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .overtop-image {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        transform: translate(-50% -50%);
+        width: 750px;
+        height: 480px;
+        background: url("../../assets/stat_lib.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .header-content {
+        z-index: 2;
+        color: white;
+        font-family: Smooch Sans;
+        font-size: larger;
+    }
+}
+
+/* Header Styling for the Elements Page */
+.elements-page header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, #333333, #f5f5f5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-content {
+        z-index: 2;
+        text-align: center;
+        color: white;
+        font-family: Smooch Sans;
+        font-size: 2rem;
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+body.elements-page .nav-links li a {
+    color: black; 
+    text-decoration: none;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body.elements-page .nav-links li .more-button {
+    background-color: #f70757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  
+  
+/* Default header for all pages (excluding home page) */
+header:not(.home-header) {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to left, #ff66b2, #ff007f);
+    h1 {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .overtop-image {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        width: 750px;
+        height: 480px;
+        background: url("../../assets/stat_lib.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .header-content {
+        z-index: 2;
+        color: white;
+        font-family: Smooch Sans;
+        font-size: larger;
+    }
+}
+
+.blog-page header, .elements-page header, .about-page header, .contact-page header, .parent-page header {
+    background: linear-gradient(to left, #ff66b2, #ff007f);
+}
+
+/* Specific styles for home page header */
+.home-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+ 
+ 
+ .about-page header {
+    position: relative;
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to left, #ff66b2, #ff007f); 
+    
+    h1 {
+        color: white;
+        font-size: 3em;
+        margin: 0;
+    }
+}
+
+.contact-page header {
+    position: relative;
+    width: 100%;
+}
+
+.map-container {
+    position: relative;
+    width: 100%; 
+    height: 500px; 
+    overflow: hidden; 
+}
+
+.map-container iframe {
+    width: 100%; 
+    height: 100%; 
+    border: 0; 
+    display: block; 
+}
+  
+/* Footer Styling */
+#footer {
+    background-color: #333333;
+    color: white;
+    font-family: 'Hestia', sans-serif;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        margin-bottom: 10px;
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+
+            &:hover {
+                color: #f70757;
+            }
+        }
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
+
+
+
+  
+  
+  
+
+
+
+ 
+  
+  

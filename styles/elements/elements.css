@@ -1,0 +1,113 @@
+body.elements-page form button[type=reset] {
+  background-color: #f9f9f9;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Smooch Sans", sans-serif !important;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(247, 7, 87, 0.4);
+}
+
+body.elements-page form button[type=submit] {
+  background-color: #f70757;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Smooch Sans", sans-serif !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-to-top {
+  color: #f70757;
+  text-decoration: none;
+}
+
+.social-links a {
+  color: #f70757;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Horizontal scrolling box styling */
+.scroll-box {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box .box-link-1 {
+  color: purple !important;
+}
+
+.box .box-link-2 {
+  color: lightblue !important;
+}
+
+.box .box-link-3 {
+  color: #f70757 !important;
+}
+
+/* Ensure h1 and p tags inside .layer-beneath are specifically targeted */
+.layer-beneath h1 {
+  color: black;
+}
+
+.layer-beneath p {
+  color: gray;
+}
+
+/* Ensuring text color for all paragraphs inside .box */
+.box p {
+  color: gray;
+}
+
+/* Retain the background styling for .layer-beneath and other related elements */
+.layer-beneath {
+  background-color: #d3d3d3;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.layer-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box p {
+  color: gray;
+}/*# sourceMappingURL=elements.css.map */

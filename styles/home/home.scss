@@ -1,0 +1,174 @@
+.home-page-container {
+  .icons-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+
+    .icon {
+      text-align: center;
+      width: 200px;
+      padding: 10px;
+      background-color: white;
+      box-shadow: none;
+      transition: transform 0.3s ease;
+
+      .icon-label {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: white;
+        margin: 10px 0;
+        color: #333;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10px 0;
+        background-color: white;
+        color: #333;
+      }
+
+      p:last-child {
+        font-size: 0.9rem;
+        color: #777;
+        line-height: 1.5;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .full-width-image-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("../../assets/get_in_touch.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    p {
+      position: absolute;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Smooch Sans;
+    margin: 20px 0;
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .link-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #36454f;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: normal;
+      color: gray;
+    }
+
+    .worth-link {
+      color: rgb(190, 7, 190);
+    }
+
+    .elements-link {
+      color: rgb(39, 196, 180);
+    }
+
+    .more-tags-link {
+      color: #f70757;
+    }
+  }
+
+  .final-image-section {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .text-overtop {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: white;
+      text-align: left;
+      font-family: smooch sans;
+      font-weight: bold;
+      font-size: larger;
+      max-width: 80%;
+
+      p {
+        font-size: 0.8em !important;
+        margin: 0;
+        padding: 5px 0;
+      }
+
+      span {
+        font-size: 1.2em;
+        margin-left: 10px;
+      }
+
+      i {
+        font-size: 2em;
+        margin-right: 10px;
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .icons-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+}

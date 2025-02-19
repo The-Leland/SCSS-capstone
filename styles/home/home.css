@@ -1,0 +1,151 @@
+.home-page-container .icons-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+.home-page-container .icons-section .icon {
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+.home-page-container .icons-section .icon .icon-label {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: white;
+  margin: 10px 0;
+  color: #333;
+}
+.home-page-container .icons-section .icon p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  background-color: white;
+  color: #333;
+}
+.home-page-container .icons-section .icon p:last-child {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.home-page-container .full-width-image-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url("../../assets/get_in_touch.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.home-page-container .full-width-image-section p {
+  position: absolute;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.home-page-container .centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: Smooch Sans;
+  margin: 20px 0;
+}
+.home-page-container .centered-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.home-page-container .centered-text .link-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #36454f;
+}
+.home-page-container .centered-text p {
+  font-size: 17px;
+  font-weight: normal;
+  color: gray;
+}
+.home-page-container .centered-text .worth-link {
+  color: rgb(190, 7, 190);
+}
+.home-page-container .centered-text .elements-link {
+  color: rgb(39, 196, 180);
+}
+.home-page-container .centered-text .more-tags-link {
+  color: #f70757;
+}
+.home-page-container .final-image-section {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.home-page-container .final-image-section .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.home-page-container .final-image-section .text-overtop {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  font-family: smooch sans;
+  font-weight: bold;
+  font-size: larger;
+  max-width: 80%;
+}
+.home-page-container .final-image-section .text-overtop p {
+  font-size: 0.8em !important;
+  margin: 0;
+  padding: 5px 0;
+}
+.home-page-container .final-image-section .text-overtop span {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+.home-page-container .final-image-section .text-overtop i {
+  font-size: 2em;
+  margin-right: 10px;
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+  .icons-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    width: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=home.css.map */

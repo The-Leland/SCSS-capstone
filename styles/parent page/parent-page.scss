@@ -1,0 +1,117 @@
+
+
+
+$primary-color: #f70757;
+$secondary-color: #333;
+$text-color: #555;
+$highlight-color: #f70757;
+$font-family: "Smooch Sans", sans-serif;
+$font-size-base: 16px;
+$font-size-heading: 20px;
+$font-size-h1: 30px;
+$line-height-base: 1.6;
+$button-padding: 10px 20px;
+$border-radius: 4px;
+$margin-bottom-base: 20px;
+
+nav {
+  background-color: $secondary-color;
+  padding: 10px 20px;
+  .navbar-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hestia {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .button-link {
+    background-color: $primary-color;
+    color: white;
+    padding: $button-padding;
+    border-radius: $border-radius;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+header {
+  background-color: $secondary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  
+  h1 {
+    font-size: $font-size-h1;
+  }
+}
+
+#footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 20px 0;
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footer-links {
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .footer-text {
+    p {
+      font-size: $font-size-base;
+      text-align: center;
+      color: $text-color;
+    }
+  }
+}
+
+.centered-bold {
+  text-align: center;
+  font-weight: bold;
+  font-size: $font-size-heading;
+  margin: $margin-bottom-base;
+}
+
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}

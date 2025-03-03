@@ -494,3 +494,44 @@ section p {
         font-size: 2rem;
     }
 }
+
+@font-face {
+    font-family: Smooch Sans;
+    src: url("../../assets/static/SmoochSans-Thin.ttf");
+    src: url("../../assets/static/SmoochSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  body,
+  html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+  
+    .hero-text {
+      font-size: 3rem;
+      font-weight: bold;
+      color: black;
+      margin: 0;
+      letter-spacing: 2px;
+      transition: font-size 0.3s ease;
+    }
+  }
+  
+  section {
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section p {
+    margin-bottom: 20px;
+  }

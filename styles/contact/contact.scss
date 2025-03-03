@@ -1,0 +1,111 @@
+
+
+
+/* Define SCSS Variables */
+$primary-color: #f70757;
+$secondary-color: #333;
+$text-color: #555;
+$highlight-color: #f70757;
+$font-family: "Smooch Sans", sans-serif;
+$button-padding: 10px 20px;
+$font-size-base: 16px;
+$font-size-heading: 20px;
+$font-size-h1: 30px;
+$line-height-base: 1.6;
+$margin-bottom-base: 20px;
+$border-radius: 4px;
+
+.contact-page {
+    font-family: $font-family;
+    padding-left: 20px;
+
+    .hero-section {
+        padding: $margin-bottom-base;
+        text-align: left;
+    }
+
+    .hero-section h1 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: $font-size-h1;
+    }
+
+    .contact-page .button-container {
+        text-align: left;
+        margin-bottom: $margin-bottom-base;
+    }
+
+    .contact-page .button-container button {
+        background-color: $primary-color;
+        color: white;
+        padding: $button-padding;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-size: $font-size-base;
+        text-align: left;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+
+    .contact-page .contact-details {
+        text-align: left;
+        margin-top: $margin-bottom-base;
+    }
+
+    .contact-page .contact-details h2 {
+        font-size: $font-size-heading;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $secondary-color;
+    }
+
+    .contact-page .contact-details p {
+        font-size: $font-size-base;
+        margin-bottom: $margin-bottom-base;
+        color: $text-color;
+        line-height: $line-height-base;
+    }
+
+    .contact-page .contact-details i {
+        margin-right: 10px;
+        color: $highlight-color;
+    }
+}
+
+#footer {
+    background-color: $secondary-color;
+    color: white;
+    font-family: $font-family;
+    padding: 20px 0;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .footer-text {
+        p {
+            font-size: $font-size-base;
+            text-align: center;
+            color: $text-color;
+        }
+    }
+}
